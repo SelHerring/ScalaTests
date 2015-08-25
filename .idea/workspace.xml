@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/net/test2/Goo.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.80526316">
-              <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding>
                 <element signature="e#19#55#0" expanded="true" />
               </folding>
@@ -689,7 +689,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/net/test2/Goo.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.80526316">
-          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
             <element signature="e#19#55#0" expanded="true" />
           </folding>
