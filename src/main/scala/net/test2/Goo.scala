@@ -15,14 +15,13 @@ object Goo extends App {
   element1.sendKeys("casebook.ru")
   element1.submit()
   ff.manage().timeouts().implicitlyWait(2, TimeUnit SECONDS)
-  try {
-    val element2 = ff.findElement(By.xpath("//a[text()='casebook.ru']"))
-    val a = element2.getText().equals("casebook.ru")
-    println("First result is equals to request")
-  } catch {
-    case e: org.openqa.selenium.NoSuchElementException =>
-      (e, println("Element does not exist"))
-  } finally{
-    ff.close()
+  val element2 = ff.findElements(By.className("g"))
+  println(element2.size())
+  if (element2.size() == 10)
+  {
+    println("Number of search results is 10")
+  } else{
+    println("Number of search results is NOT 10")
   }
+  ff.close()
 }
