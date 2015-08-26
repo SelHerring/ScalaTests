@@ -19,6 +19,7 @@ object Goo2 extends App {
   element2.click()
   val element3 = ff.findElement(By.xpath(".//*[@id='hdtb-msb']/div[2]/a"))
   element3.click()
+  val element4 = ff.findElements(By.xpath(".//*[@id='rg_s']/*/a/img"))
+  print("There are ",element4.size(), " pictures")
   ff.close()
 }
-
