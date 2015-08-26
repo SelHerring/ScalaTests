@@ -7,7 +7,11 @@
 		revision="1.0"
 		conf="default"
 		confs="default"
+<<<<<<< HEAD
 		date="20150826080415"/>
+=======
+		date="20150825171440"/>
+>>>>>>> ScalaTests/master
 	<dependencies>
 		<module organisation="org.scala-sbt" name="precompiled-2_9_3">
 			<revision name="0.13.7" status="release" pubdate="20141119013345" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="47">
