@@ -7,47 +7,83 @@
 		revision="1.0"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150824134452"/>
+		date="20150828133557"/>
 	<dependencies>
+		<module organisation="org.scalatest" name="scalatest_2.11">
+			<revision name="2.2.4" status="release" pubdate="20150129111600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="42">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4895" time="0" location="C:\Users\1\.ivy2\cache\org.scalatest\scalatest_2.11\ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.pom"/>
+				<caller organisation="default" name="exampleproject_2.11" conf="compile" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalatest_2.11" type="bundle" ext="jar" status="no" details="" size="7185789" time="0" location="C:\Users\1\.ivy2\cache\org.scalatest\scalatest_2.11\bundles\scalatest_2.11-2.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.2" status="release" pubdate="20140520121040" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3048" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.11" conf="default, compile, runtime, master" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="2.2.4"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="bundle" ext="jar" status="no" details="" size="648678" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.2" status="release" pubdate="20140723103911" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2860" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.11.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.2.4"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4391629" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-java">
-			<revision name="2.47.1" status="release" pubdate="20150730221022" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
-				<metadata-artifact status="successful" details="" size="5136" time="287" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-java\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-java\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/2.47.1/selenium-java-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730221022" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<metadata-artifact status="no" details="" size="7153" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-java\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/2.47.1/selenium-java-2.47.1.pom"/>
 				<caller organisation="default" name="exampleproject_2.11" conf="compile" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="selenium-java" type="jar" ext="jar" status="successful" details="" size="2136" time="290" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-java\jars\selenium-java-2.47.1.jar">
+					<artifact name="selenium-java" type="jar" ext="jar" status="no" details="" size="2136" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-java\jars\selenium-java-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/2.47.1/selenium-java-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-leg-rc">
-			<revision name="2.47.1" status="release" pubdate="20150730221007" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
-				<metadata-artifact status="successful" details="" size="4831" time="287" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-leg-rc\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-leg-rc\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-leg-rc/2.47.1/selenium-leg-rc-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730221007" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<metadata-artifact status="no" details="" size="6093" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-leg-rc\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-leg-rc/2.47.1/selenium-leg-rc-2.47.1.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<artifacts>
-					<artifact name="selenium-leg-rc" type="jar" ext="jar" status="successful" details="" size="398801" time="1454" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-leg-rc\jars\selenium-leg-rc-2.47.1.jar">
+					<artifact name="selenium-leg-rc" type="jar" ext="jar" status="no" details="" size="398801" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-leg-rc\jars\selenium-leg-rc-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-leg-rc/2.47.1/selenium-leg-rc-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-support">
-			<revision name="2.47.1" status="release" pubdate="20150730220948" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
-				<metadata-artifact status="successful" details="" size="2460" time="273" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-support\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-support\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/2.47.1/selenium-support-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730220948" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<metadata-artifact status="no" details="" size="6069" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-support\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/2.47.1/selenium-support-2.47.1.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<artifacts>
-					<artifact name="selenium-support" type="jar" ext="jar" status="successful" details="" size="143232" time="687" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-support\jars\selenium-support-2.47.1.jar">
+					<artifact name="selenium-support" type="jar" ext="jar" status="no" details="" size="143232" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-support\jars\selenium-support-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/2.47.1/selenium-support-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-safari-driver">
-			<revision name="2.47.1" status="release" pubdate="20150730220930" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
-				<metadata-artifact status="successful" details="" size="3076" time="343" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-safari-driver\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-safari-driver\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-safari-driver/2.47.1/selenium-safari-driver-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730220930" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<metadata-artifact status="no" details="" size="5991" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-safari-driver\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-safari-driver/2.47.1/selenium-safari-driver-2.47.1.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<artifacts>
-					<artifact name="selenium-safari-driver" type="jar" ext="jar" status="successful" details="" size="305670" time="1050" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-safari-driver\jars\selenium-safari-driver-2.47.1.jar">
+					<artifact name="selenium-safari-driver" type="jar" ext="jar" status="no" details="" size="305670" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-safari-driver\jars\selenium-safari-driver-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-safari-driver/2.47.1/selenium-safari-driver-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -79,33 +115,33 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-ie-driver">
-			<revision name="2.47.1" status="release" pubdate="20150730220909" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
-				<metadata-artifact status="successful" details="" size="3186" time="303" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-ie-driver\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-ie-driver\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/2.47.1/selenium-ie-driver-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730220909" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<metadata-artifact status="no" details="" size="6127" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-ie-driver\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/2.47.1/selenium-ie-driver-2.47.1.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<artifacts>
-					<artifact name="selenium-ie-driver" type="jar" ext="jar" status="successful" details="" size="11544" time="343" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-ie-driver\jars\selenium-ie-driver-2.47.1.jar">
+					<artifact name="selenium-ie-driver" type="jar" ext="jar" status="no" details="" size="11544" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-ie-driver\jars\selenium-ie-driver-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/2.47.1/selenium-ie-driver-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-firefox-driver">
-			<revision name="2.47.1" status="release" pubdate="20150730220839" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
-				<metadata-artifact status="successful" details="" size="3227" time="288" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-firefox-driver\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-firefox-driver\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/2.47.1/selenium-firefox-driver-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730220839" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<metadata-artifact status="no" details="" size="6136" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-firefox-driver\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/2.47.1/selenium-firefox-driver-2.47.1.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<artifacts>
-					<artifact name="selenium-firefox-driver" type="jar" ext="jar" status="successful" details="" size="2589325" time="4786" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-firefox-driver\jars\selenium-firefox-driver-2.47.1.jar">
+					<artifact name="selenium-firefox-driver" type="jar" ext="jar" status="no" details="" size="2589325" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-firefox-driver\jars\selenium-firefox-driver-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/2.47.1/selenium-firefox-driver-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-htmlunit-driver">
-			<revision name="2.47.1" status="release" pubdate="20150730220854" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
-				<metadata-artifact status="successful" details="" size="2280" time="286" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-htmlunit-driver\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-htmlunit-driver\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-htmlunit-driver/2.47.1/selenium-htmlunit-driver-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730220854" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<metadata-artifact status="no" details="" size="6158" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-htmlunit-driver\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-htmlunit-driver/2.47.1/selenium-htmlunit-driver-2.47.1.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<artifacts>
-					<artifact name="selenium-htmlunit-driver" type="jar" ext="jar" status="successful" details="" size="61088" time="692" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-htmlunit-driver\jars\selenium-htmlunit-driver-2.47.1.jar">
+					<artifact name="selenium-htmlunit-driver" type="jar" ext="jar" status="no" details="" size="61088" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-htmlunit-driver\jars\selenium-htmlunit-driver-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-htmlunit-driver/2.47.1/selenium-htmlunit-driver-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -332,11 +368,11 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-edge-driver">
-			<revision name="2.47.1" status="release" pubdate="20150730220818" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
-				<metadata-artifact status="successful" details="" size="2215" time="288" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-edge-driver\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-edge-driver\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-edge-driver/2.47.1/selenium-edge-driver-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730220818" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<metadata-artifact status="no" details="" size="6130" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-edge-driver\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-edge-driver/2.47.1/selenium-edge-driver-2.47.1.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<artifacts>
-					<artifact name="selenium-edge-driver" type="jar" ext="jar" status="successful" details="" size="6392" time="284" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-edge-driver\jars\selenium-edge-driver-2.47.1.jar">
+					<artifact name="selenium-edge-driver" type="jar" ext="jar" status="no" details="" size="6392" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-edge-driver\jars\selenium-edge-driver-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-edge-driver/2.47.1/selenium-edge-driver-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -356,19 +392,19 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-chrome-driver">
-			<revision name="2.47.1" status="release" pubdate="20150730220801" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
-				<metadata-artifact status="successful" details="" size="2945" time="308" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-chrome-driver\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-chrome-driver\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/2.47.1/selenium-chrome-driver-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730220801" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<metadata-artifact status="no" details="" size="5848" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-chrome-driver\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/2.47.1/selenium-chrome-driver-2.47.1.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<artifacts>
-					<artifact name="selenium-chrome-driver" type="jar" ext="jar" status="successful" details="" size="9634" time="383" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-chrome-driver\jars\selenium-chrome-driver-2.47.1.jar">
+					<artifact name="selenium-chrome-driver" type="jar" ext="jar" status="no" details="" size="9634" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-chrome-driver\jars\selenium-chrome-driver-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/2.47.1/selenium-chrome-driver-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-remote-driver">
-			<revision name="2.47.1" status="release" pubdate="20150730220744" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
-				<metadata-artifact status="successful" details="" size="3599" time="270" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-remote-driver\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-remote-driver\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/2.47.1/selenium-remote-driver-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730220744" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<metadata-artifact status="no" details="" size="6848" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-remote-driver\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/2.47.1/selenium-remote-driver-2.47.1.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-ie-driver" conf="compile, runtime" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-htmlunit-driver" conf="compile, runtime" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
@@ -378,7 +414,7 @@
 				<caller organisation="org.seleniumhq.selenium" name="selenium-chrome-driver" conf="compile, runtime" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-safari-driver" conf="compile, runtime" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<artifacts>
-					<artifact name="selenium-remote-driver" type="jar" ext="jar" status="successful" details="" size="230417" time="856" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-remote-driver\jars\selenium-remote-driver-2.47.1.jar">
+					<artifact name="selenium-remote-driver" type="jar" ext="jar" status="no" details="" size="230417" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-remote-driver\jars\selenium-remote-driver-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/2.47.1/selenium-remote-driver-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -427,11 +463,11 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-api">
-			<revision name="2.47.1" status="release" pubdate="20150730220720" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
-				<metadata-artifact status="successful" details="" size="5278" time="272" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-api\ivy-2.47.1.xml" searched="true" original-local-location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-api\ivy-2.47.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/2.47.1/selenium-api-2.47.1.pom"/>
+			<revision name="2.47.1" status="release" pubdate="20150730220720" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<metadata-artifact status="no" details="" size="6130" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-api\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/2.47.1/selenium-api-2.47.1.pom"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="2.47.1"/>
 				<artifacts>
-					<artifact name="selenium-api" type="jar" ext="jar" status="successful" details="" size="142641" time="630" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-api\jars\selenium-api-2.47.1.jar">
+					<artifact name="selenium-api" type="jar" ext="jar" status="no" details="" size="142641" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-api\jars\selenium-api-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/2.47.1/selenium-api-2.47.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -512,14 +548,32 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.11.7" status="release" pubdate="20150623001702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+			<revision name="2.11.7" status="release" pubdate="20150623001702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="0">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang\scala-library\ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.2.4"/>
 				<caller organisation="default" name="exampleproject_2.11" conf="compile" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.11.2"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="1.0.2"/>
 				<artifacts>
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5745606" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.7.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="2.11.7"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="1.0.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="-1">
+				<evicted-by rev="2.11.7"/>
+				<caller organisation="org.scalatest" name="scalatest_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.2.4"/>
+				<caller organisation="default" name="exampleproject_2.11" conf="compile" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.11.2"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="1.0.2"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>

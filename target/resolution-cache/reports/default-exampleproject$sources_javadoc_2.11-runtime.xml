@@ -7,12 +7,62 @@
 		revision="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-<<<<<<< HEAD
-		date="20150826080416"/>
-=======
-		date="20150825171441"/>
->>>>>>> ScalaTests/master
+		date="20150902115524"/>
 	<dependencies>
+		<module organisation="org.scalatest" name="scalatest_2.11">
+			<revision name="2.2.4" status="release" pubdate="20150129111600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="41">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4895" time="0" location="C:\Users\1\.ivy2\cache\org.scalatest\scalatest_2.11\ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.pom"/>
+				<caller organisation="default" name="exampleproject$sources_javadoc_2.11" conf="compile, runtime" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalatest_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1438876" time="0" location="C:\Users\1\.ivy2\cache\org.scalatest\scalatest_2.11\srcs\scalatest_2.11-2.2.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4-sources.jar"/>
+					</artifact>
+					<artifact name="scalatest_2.11" type="jar" ext="jar" status="no" details="" size="7185789" time="0" location="C:\Users\1\.ivy2\cache\org.scalatest\scalatest_2.11\jars\scalatest_2.11-2.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar"/>
+					</artifact>
+					<artifact name="scalatest_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="7960119" time="0" location="C:\Users\1\.ivy2\cache\org.scalatest\scalatest_2.11\docs\scalatest_2.11-2.2.4-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.2" status="release" pubdate="20140520121040" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="43">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3048" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.pom"/>
+				<caller organisation="default" name="exampleproject$sources_javadoc_2.11" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109171" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\srcs\scala-xml_2.11-1.0.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-sources.jar"/>
+					</artifact>
+					<artifact name="scala-xml_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1225359" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\docs\scala-xml_2.11-1.0.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-xml_2.11" type="jar" ext="jar" status="no" details="" size="648678" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\jars\scala-xml_2.11-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.2" status="release" pubdate="20140723103911" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.2/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="42">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2860" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.11.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2.pom"/>
+				<caller organisation="default" name="exampleproject$sources_javadoc_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.2/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4391629" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3622898" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang\scala-reflect\docs\scala-reflect-2.11.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="557871" time="0" location="C:\Users\1\.ivy2\cache\org.scala-lang\scala-reflect\srcs\scala-reflect-2.11.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-leg-rc">
 			<revision name="2.47.1" status="release" pubdate="20150730221007" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="40">
 				<metadata-artifact status="no" details="" size="6093" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-leg-rc\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-leg-rc/2.47.1/selenium-leg-rc-2.47.1.pom"/>
@@ -588,11 +638,11 @@
 				<metadata-artifact status="no" details="" size="6130" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-api\ivy-2.47.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/2.47.1/selenium-api-2.47.1.pom"/>
 				<caller organisation="default" name="exampleproject$sources_javadoc_2.11" conf="compile, runtime" rev="2.47.1" rev-constraint-default="2.47.1" rev-constraint-dynamic="2.47.1" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="selenium-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="170991" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-api\srcs\selenium-api-2.47.1-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/2.47.1/selenium-api-2.47.1-sources.jar"/>
-					</artifact>
 					<artifact name="selenium-api" type="jar" ext="jar" status="no" details="" size="142641" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-api\jars\selenium-api-2.47.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/2.47.1/selenium-api-2.47.1.jar"/>
+					</artifact>
+					<artifact name="selenium-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="170991" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-api\srcs\selenium-api-2.47.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/2.47.1/selenium-api-2.47.1-sources.jar"/>
 					</artifact>
 					<artifact name="selenium-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="845272" time="0" location="C:\Users\1\.ivy2\cache\org.seleniumhq.selenium\selenium-api\docs\selenium-api-2.47.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/2.47.1/selenium-api-2.47.1-javadoc.jar"/>
