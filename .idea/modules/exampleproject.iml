@@ -20,7 +20,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.7:jar" level="project" />
     <orderEntry type="library" name="SBT: cglib:cglib-nodep:2.1_3:jar" level="project" />
     <orderEntry type="library" name="SBT: com.google.code.gson:gson:2.3.1:jar" level="project" />
     <orderEntry type="library" name="SBT: com.google.guava:guava:18.0:jar" level="project" />
@@ -45,6 +44,10 @@
     <orderEntry type="library" name="SBT: org.eclipse.jetty.websocket:websocket-api:9.2.11.v20150529:jar" level="project" />
     <orderEntry type="library" name="SBT: org.eclipse.jetty.websocket:websocket-client:9.2.11.v20150529:jar" level="project" />
     <orderEntry type="library" name="SBT: org.eclipse.jetty.websocket:websocket-common:9.2.11.v20150529:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.7:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-reflect:2.11.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scalatest:scalatest_2.11:2.2.4:jar" level="project" />
     <orderEntry type="library" name="SBT: org.seleniumhq.selenium:selenium-api:2.47.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.seleniumhq.selenium:selenium-chrome-driver:2.47.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.seleniumhq.selenium:selenium-edge-driver:2.47.1:jar" level="project" />

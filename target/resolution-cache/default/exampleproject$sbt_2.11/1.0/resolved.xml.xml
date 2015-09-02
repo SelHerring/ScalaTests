@@ -4,11 +4,7 @@
 		module="exampleproject$sbt_2.11"
 		revision="1.0"
 		status="integration"
-<<<<<<< HEAD
-		publication="20150826080412"
-=======
-		publication="20150825171439"
->>>>>>> ScalaTests/master
+		publication="20150902120924"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
