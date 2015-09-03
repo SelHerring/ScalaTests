@@ -11,8 +11,8 @@ import org.openqa.selenium.firefox.FirefoxDriver
 object Auth extends App {
   val ff: WebDriver = new FirefoxDriver()
   ff.navigate().to("http://casebook.ru/")
-  val element1 = ff.findElement(By.xpath("//div[@class=\"b-button js-logon g-unselectable\"]")).click()
-  val element2 = ff.findElement(By.xpath("//input[@name=\"UserName\"]")).sendKeys("d.soldatenkov@parcsis.org")
+  val element1 = ff.findElement(By.xpath("//div[@class='b-button js-logon g-unselectable']")).click()
+  val element2 = ff.findElement(By.xpath("//input[@name='UserName']")).sendKeys("d.soldatenkov@parcsis.org")
   val element3 = ff.findElement(By.xpath("//input[@type='password']")).sendKeys("84637857")
   val element4 = ff.findElement(By.xpath("//input[@type='submit']")).click()
   ff.manage().timeouts().implicitlyWait(10, TimeUnit SECONDS)
