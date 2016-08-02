@@ -1,42 +1,34 @@
-package jdbc
+package net.DataBase.Spikes
 
-import java.sql.DriverManager
-import java.sql.Connection
+import org.squeryl.Session
+import org.squeryl.adapters.MSSQLServer
+import org.squeryl.SessionFactory
+import org.squeryl.PrimitiveTypeMode._
+import org.squeryl.Schema
 
-/**
-  * A Scala JDBC connection example by Alvin Alexander,
-  * http://alvinalexander.com
-  */
-object ScalaJdbcConnectSelect {
+// Create a Customer class which has the same fields as the Customer table in SQL Server
+case class Customer(id: Long, name: String) {}
 
-  def main(args: Array[String]) {
-    // connect to the database named "mysql" on the localhost
-    val driver = "com.mysql.jdbc.Driver"
-    val url = "Server=s-bak-01;Failover partner=cg-db-21;Database=OrganizationsStorage7;integrated security=sspi;"
-    //val url = "jdbc:mysql://localhost/mysql"
-    val username = "root"
-    val password = "root"
+object SqlSpike extends App with Schema {
+  val databaseConnectionUrl = "Server=s-bak-01;Failover partner=cg-db-21;Database=OrganizationsStorage7;integrated security=sspi;"
+  val databaseUsername = "kad/d.soldatenkov"
+  val databasePassword = "password"
 
-    // there's probably a better way to do this
-    var connection:Connection = null
+  // Set the jtds driver
+  Class.forName("net.sourceforge.jtds.jdbc.Driver")
 
-    try {
-      // make the connection
-      Class.forName(driver)
-      connection = DriverManager.getConnection(url, username, password)
+  // Connect to the database
+  SessionFactory.concreteFactory = Some(() =>
+    Session.create(
+      java.sql.DriverManager.getConnection(databaseConnectionUrl, databaseUsername, databasePassword),
+      new MSSQLServer))
 
-      // create the statement, and run the select query
-      val statement = connection.createStatement()
-      val resultSet = statement.executeQuery("SELECT host, user FROM user")
-      while ( resultSet.next() ) {
-        val host = resultSet.getString("host")
-        val user = resultSet.getString("user")
-        println("host, user = " + host + ", " + user)
-      }
-    } catch {
-      case e => e.printStackTrace
-    }
-    connection.close()
+  // Setup the Customer class to be mapped to the "Customer" table in SQL Server
+  val customers = table[Customer]("Customer")
+
+  // Select Customer with id=1 from the Customer table
+  transaction {
+    val customer = customers.where(c => c.id === 1).single
+    println("Customer name: " + customer.name)
   }
-
 }
