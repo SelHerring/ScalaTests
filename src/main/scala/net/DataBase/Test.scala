@@ -1,4 +1,4 @@
-package net.DataBase.Spikes
+package spikes
 
 import org.squeryl.Session
 import org.squeryl.adapters.MSSQLServer
@@ -9,16 +9,17 @@ import org.squeryl.Schema
 // Create a Customer class which has the same fields as the Customer table in SQL Server
 case class Customer(id: Long, name: String) {}
 
+
 object SqlSpike extends App with Schema {
-  val databaseConnectionUrl = "Server=s-bak-01;Failover partner=cg-db-21;Database=OrganizationsStorage7;integrated security=sspi;"
-  val databaseUsername = "kad/d.soldatenkov"
+  val databaseConnectionUrl = "jdbc:jtds:sqlserver://localhost:5432;DatabaseName=mydatabasename"
+  val databaseUsername = "myusername"
   val databasePassword = "password"
 
   // Set the jtds driver
   Class.forName("net.sourceforge.jtds.jdbc.Driver")
 
   // Connect to the database
-  SessionFactory.concreteFactory = Some(() =>
+  SessionFactory.concreteFactory = Some(()=>
     Session.create(
       java.sql.DriverManager.getConnection(databaseConnectionUrl, databaseUsername, databasePassword),
       new MSSQLServer))
@@ -28,7 +29,7 @@ object SqlSpike extends App with Schema {
 
   // Select Customer with id=1 from the Customer table
   transaction {
-    val customer = customers.where(c => c.id === 1).single
+    val customer = customers.where(c=> c.id === 1).single
     println("Customer name: " + customer.name)
   }
 }
